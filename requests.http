@@ -1,0 +1,11 @@
+### Get average for prime numbers
+GET http://localhost:3000/numbers/p
+
+### Get average for fibonacci numbers
+GET http://localhost:3000/numbers/f
+
+### Get average for even numbers
+GET http://localhost:3000/numbers/e
+
+### Get average for random numbers
+GET http://localhost:3000/numbers/r

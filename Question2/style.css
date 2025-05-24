@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 10px;
+}
+h2 {
+    color: #333;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.controls button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+    min-width: 120px;
+}
+
+.controls button:hover {
+    background-color: #1558b0;
+}
+.controls button:active {
+    transform: scale(0.98);
+}
+
+
+.status-message {
+    text-align: center;
+    margin: 20px 0;
+    padding: 12px;
+    background-color: #e8f0fe;
+    border-left: 4px solid #1a73e8;
+    font-style: italic;
+    border-radius: 4px;
+    color: #334;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.result-item {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+.result-item strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #004d99;
+    font-weight: 600;
+}
+
+pre {
+    background: #e9ecef;
+    padding: 10px 15px;
+    border-radius: 4px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    color: #333;
+    border: 1px solid #ced4da;
+}

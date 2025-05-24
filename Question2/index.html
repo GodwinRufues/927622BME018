@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Average Calculator</h1>
+        <p>Fetches numbers from a test server and calculates their running average within a fixed-size window.</p>
+        <p>Configured Window Size: <span id="windowSizeDisplay">10</span></p>
+
+        <div class="controls">
+            <button id="fetchPrime" data-idchar="p">Fetch Prime (p)</button>
+            <button id="fetchFibonacci" data-idchar="f">Fetch Fibonacci (f)</button>
+            <button id="fetchEven" data-idchar="e">Fetch Even (e)</button>
+            <button id="fetchRandom" data-idchar="r">Fetch Random (r)</button>
+        </div>
+
+        <div id="status" class="status-message">Ready. Select a number type to fetch.</div>
+
+        <div class="results">
+            <h2>API & Window States:</h2>
+            <div class="result-item">
+                <strong>Numbers Received from API:</strong>
+                <pre id="fetchedNumbers">[]</pre>
+            </div>
+            <div class="result-item">
+                <strong>Window - State Before Fetch:</strong>
+                <pre id="windowPrevState">[]</pre>
+            </div>
+            <div class="result-item">
+                <strong>Window - State After Fetch (Current):</strong>
+                <pre id="windowCurrState">[]</pre>
+            </div>
+            <div class="result-item">
+                <strong>Average of Current Window:</strong>
+                <pre id="avg">0.00</pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
